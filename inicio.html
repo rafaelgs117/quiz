@@ -375,7 +375,7 @@
 
       // Criar o link "Voltar para o Início" e adicionar no DOM
       const linkVoltar = document.createElement("a");
-      linkVoltar.href = "inicio.html";  // ajuste o link para a página inicial correta
+      linkVoltar.href = "index.html";  // <<-- AQUI ESTÁ A CORREÇÃO
       linkVoltar.id = "btnVoltar";
       linkVoltar.textContent = "⟵ Voltar para o Início";
       linkVoltar.style.display = "block";
@@ -426,7 +426,7 @@
     });
 
     btnRetry.addEventListener("click", () => {
-      gerarQuiz(); // Certifique-se de que a função chamada seja gerarQuiz()
+      generarQuiz(); // Certifique-se de que a função chamada seja gerarQuiz()
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
